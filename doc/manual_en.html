@@ -1,0 +1,812 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta content="HTML Tidy for Linux/x86 (vers 1st April 2003), see www.w3.org" name="generator" />
+ <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+
+ <title>uniLETIM HowTo</title>
+ <link rel="stylesheet" type="text/css" href="../themes/css/uniletim.css" />
+</head>
+
+<body class="book" bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#840084" alink="#006000">
+ <div class="TITLEPAGE">
+  <h1 class="title"><span lang="en-us">uniLETIM</span> HowTo</h1>
+
+  <h4 class="subtitle">Version 0.2</h4>
+
+  <h4 class="author">Ondrej Vegh, Michal Jurco, Robert Zelnik</h4>
+ </div>
+
+ <div class="abstract">
+  This document describes, how to install, setup and use uniLETIM application 
+
+  <p class="copyright">You can distribute it by the conditions of <a href="./gpl_en.html">General
+  Public License</a></p>
+ </div>
+
+ <div class="Obsah">
+  <h1>Content</h1>
+
+  <ol type="I">
+   <li>
+    <a href="#s00">Introduction</a> 
+
+    <ol>
+     <li><a href="#s01">Preamble</a></li>
+
+     <li><a href="#s02">Informations about project and internet</a></li>
+
+     <li><a href="#s03">Files to download</a></li>
+
+     <li><a href="#s04">Mailing-lists</a></li>
+    </ol>
+   </li>
+
+   <li>
+    <a href="#s10">Basic informations</a> 
+
+    <ol>
+     <li><a href="#s11">System requirements</a></li>
+
+     <li><a href="#s12">What and how to download</a></li>
+    </ol>
+   </li>
+
+   <li>
+    <a href="#s20">Installation</a> 
+
+    <ol>
+     <li><a href="#s21">Installation of application</a></li>
+
+     <li><a href="#s22">Updating</a></li>
+    </ol>
+   </li>
+
+   <li>
+    <a href="#s30">Usage</a> 
+
+    <ol>
+     <li><a href="#s31">Creating of group</a></li>
+
+     <li><a href="#s32">Start</a></li>
+
+     <li><a href="#s33">Logging in</a></li>
+
+     <li>
+      <a href="#s34">Administration</a> 
+
+      <ol>
+       <li>
+        <a href="#s341">Sections</a> 
+
+        <ol type="a">
+         <li><a href="#s3411">Creating of new section</a></li>
+
+         <li><a href="#s3412">Renaming of existing section</a></li>
+
+         <li><a href="#s3413">Deleting of section</a></li>
+        </ol>
+       </li>
+
+       <li>
+        <a href="#s342">Subsections</a> 
+
+        <ol type="a">
+         <li><a href="#s3421">Creating of new subsection</a></li>
+
+         <li><a href="#s3422">Renaming of existing subsection</a></li>
+
+         <li><a href="#s3423">Deleting of subsection</a></li>
+        </ol>
+       </li>
+      </ol>
+     </li>
+
+     <li>
+      <a href="#s35">Users</a> 
+
+      <ol>
+       <li><a href="#s351">New user</a></li>
+
+       <li><a href="#s352">List of users</a></li>
+
+       <li><a href="#s353">Informations about user</a></li>
+
+       <li><a href="#s354">Changing of user data</a></li>
+
+       <li><a href="#s355">Deleting of user</a></li>
+      </ol>
+     </li>
+
+     <li>
+      <a href="#s36">Announces</a> 
+
+      <ol>
+       <li><a href="#s361">Displaying of announces</a></li>
+
+       <li><a href="#s362">Searching in announces</a></li>
+
+       <li><a href="#s363">Inserting of announce</a></li>
+
+       <li><a href="#s364">Modifying of announce</a></li>
+
+       <li><a href="#s365">Deleting of announce</a></li>
+      </ol>
+     </li>
+
+     <li>
+      <a href="#s37">Payments</a> 
+
+      <ol>
+       <li><a href="#s371">Displaying of payments</a></li>
+
+       <li><a href="#s372">Paying orders</a></li>
+      </ol>
+     </li>
+
+     <li><a href="#s38">Extract of payments</a></li>
+    </ol>
+   </li>
+
+   <li>
+    <a href="#s40">Problems</a> 
+
+    <ol>
+     <li><a href="#s41">Internet connection setup</a></li>
+    </ol>
+   </li>
+
+   <li>
+    <a href="#s50">Appendixes</a> 
+
+    <ol type="A">
+     <li><a href="#s51">Licenses</a></li>
+    </ol>
+   </li>
+  </ol>
+ </div><!--Text dokumentu-->
+
+ <h1 id="s00">I. Introduction</h1>
+
+ <h2 id="s01">Preamble</h2>
+
+ <p>uniLETIM was originally created as internet application designed to an administration of LETS
+ group and by the later requests also for TimeBank administration. When you use or prepare to use
+ this application, probably you know what is LETS or TimeBank. If not, you can find more
+ informations <a href="#s06">here</a>.</p>
+
+ <p>uniLETIM enables administration of users, collecting and sorting of offers and queries and
+ recording of performed services. The application works in the internet browser environment. It
+ enables displaying of informations on the screen or printer-compatible formating. Application
+ works in three modes:</p>
+
+ <ol>
+  <li>LETS - multi-user mode</li>
+
+  <li>Time Bank</li>
+
+  <li>LETS - single-user mode</li>
+ </ol>
+
+ <p>LETS - multi-user mode enables administration of data, announces or service records for all
+ members. This mode is suitable to use in the internet environment, where every user can access to
+ his data and modify them. In the Time Bank there is usually one administrator, who serves data
+ inserting and creating of outputs. For that needs it was created a mode for installation on a
+ single local computer without network connection. That mode is usable also for LETS groups, where
+ the majority of members does not have access to internet.</p>
+
+ <p>Programming language:</p>
+
+ <ul>
+  <li>the application is written in PHP language, by which the server generates HTML pages with
+  outputs</li>
+ </ul>
+
+ <p>The application is available in two versions:</p>
+
+ <ol>
+  <li>uniLETIM-standalone</li>
+
+  <li>uniLETIM-full</li>
+ </ol>
+
+ <p><b>uniLETIM-standalone</b> package contains just a single uniLETIM application. This version is
+ usable for internet server or single computer, which has installed an http-server with PHP and
+ MySQL support.</p>
+
+ <p><b>uniLETIM-full</b> package contains also the installation batch files for Microsoft Windows
+ operating system and it is determinated for single computer, which is not connected to internet
+ and does not have a http-server with PHP and MySQL installed. This package is advisable for users,
+ who do not have experiences with installation of that applications and which need just install the
+ complete application environment by one click.</p>
+
+ <p><b>uniLETIM-full</b> instalation contains:</p>
+
+ <ul>
+  <li><b>uniLETIM</b> - application PHP scripts</li>
+
+  <li><b>PHP 4</b> - enables the running of PHP scripts on the server</li>
+
+  <li><b>Apache HTTP Server</b> - www-server</li>
+
+  <li><b>mySQL</b> - database which saves the data used by uniLETIM</li>
+ </ul>
+
+ <p>Apache+PHP+mySQL installation is based on
+ <a href="http://sourceforge.net/projects/phptriad">PHPtriad</a> project. You can read about the
+ license terms for Apache HTTP server, PHP and mySQL on <a href="licencie.htm">tu</a>.</p>
+
+ <p>This application is "free software", which is referred to <a href="gpl_sk.html">General public
+ license GNU</a>. The freedom means that it is freely distributable (with source code), and you can
+ freely modify and use it's content in another programs (if they are also distributed under
+ GNU/GPL). It enables free sharing of knowledges and effort outcomes between the software creators,
+ which creates social relations based on cooperation more than on competition. By the way it is
+ also the target of LETSystems and TimeBanks creating.</p>
+
+ <p>We did not find any application with comparable features of use.</p>
+
+ <h2 id="s02">Informations of project on internet</h2>
+
+ <p><a href="http://uniletim.sourceforge.net/">uniletim.sourceforge.net</a></p>
+
+ <blockquote>
+  <p>uniLETIM project home page</p>
+ </blockquote>
+
+ <p>
+ <a href="http://www.sourceforge.net/projects/uniletim/">www.sourceforge.net/projects/uniletim</a></p>
+
+ <blockquote>
+  <p>Informations about current status of project, installation packages, source code files,
+  documentation and another usable data.</p>
+ </blockquote>
+
+ <h2 id="s03">Files to download</h2>
+
+ <p>
+ <a href="http://sourceforge.net/project/showfiles.php?group_id=66618">sourceforge.net/project/showfiles.php?group_id=66618</a></p>
+
+ <blockquote>
+  <p>Current version of application - installation files</p>
+ </blockquote>
+
+	<dt>
+<a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/uniletim">cvs.sourceforge.net/cgi-bin/viewcvs.cgi/uniletim</a></dt>
+
+ <blockquote>
+  <p>Source code files available via CVS (Concurrent Versions System)<br />
+  Warning: the installation from source code files could work unperfectly, because the new features
+  from developers are implemented here. On the other side this version may contain many new
+  features or bugs resolved.</p>
+ </blockquote>
+
+ <h2 id="s04">Mailing-lists</h2>
+
+ <p>
+ <a href="mailto:uniletim-announce@lists.sourceforge.net">uniletim-announce@lists.sourceforge.net</a></p>
+
+ <blockquote>
+  <p>Announces of new versions of application and any news connected with a project.</p>
+ </blockquote>
+
+ <p>
+ <a href="mailto:uniletim-devel@lists.sourceforge.net">uniletim-devel@lists.sourceforge.net</a></p>
+
+ <blockquote>
+  <p>Mailing-list for developers. If you want to help to creating and improving of uniLETIM
+  application, you can subscribe this conference.</p>
+ </blockquote>
+
+ <p>
+ <a href="mailto:uniletim-users@lists.sourceforge.net">uniletim-users@lists.sourceforge.net</a></p>
+
+ <blockquote>
+  <p>Mailing-list for users. You can ask the questions connected with application use and share
+  your experiences with another users.</p>
+ </blockquote>
+
+ <p>You can subscribe this mailing-lists on this address:
+ <a href="http://sourceforge.net/mail/?group_id=66618">http://sourceforge.net/mail/?group_id=66618</a>.</p>
+
+ <h1 id="s10">II. Basic informations</h1>
+
+ <h2 id="s11">System requirements</h2>
+
+ <p><b>uniLETIM-standalone:</b><br />
+ requirements for PHP scripts running:</p>
+
+ <ul>
+  <li>webserver with PHP ver. 4 or higher (for example Apache, IIS, PWS, Sambar)</li>
+
+  <li>mySQL database</li>
+ </ul>
+
+ <p><b>uniLETIM-full:</b><br />
+ Webserver and mySQL are included into installation and they have this requirements to the
+ system:</p>
+
+ <ul>
+  <li>Pentium 75 MHz and higher</li>
+
+  <li>32 MB RAM (64 MB recommended)</li>
+
+  <li>Windows 95, 98, Me, NT, 2000, XP</li>
+ </ul>
+
+ <h2 id="s12">What and how to download</h2>
+
+ <p>Current version of application and updating of older versions:</p>
+
+ <blockquote>
+  <p>
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=66618">sourceforge.net/project/showfiles.php?group_id=66618</a></p>
+ </blockquote>
+
+ <h1 id="s20">III. Installation</h1>
+
+ <h2 id="s21">1. Installation of application</h2>
+
+ <p>You can run the uniLETIM installation by starting the "uniletim-full-X.XX.exe" file (where XX
+ is a number of current version), which is on the installation CD.</p>
+
+ <div class="ppnadpis">
+  Installation progress:
+ </div>
+
+ <ol>
+  <li>Choose the language of the installation dialogs from the menu and click the "OK" button.</li>
+
+  <li>Read the license and if you aggree with it's content, click the "Aggree" button.</li>
+
+  <li>Choose the parts of the application, which should be installed.<br />
+  The "uniLETIM program files" checkbox must be checked if you want to use the program.<br />
+  You can leave the "Server and database" checkbox unchecked if you have an older version of the
+  program installed and you just want to update it.<br />
+  You can leave the "Links in startmenu" checkbox unchecked if you do not want to start the program
+  from start menu.<br />
+  We recommend to let both checkboxes checked. Click to "Install" button.<br />
+  An automatic installation process will start and after finishing the "finished" message will be
+  displayed on the status bar. Click the "Show details" to show the installation process
+  details.</li>
+
+  <li>Click the "Close" button.</li>
+
+  <li>The installed uniLETIM application will start.</li>
+ </ol>
+
+ <h2 id="s22">2. Updating</h2>
+
+ <p>You can update the program to the newest version by starting of update file with highest number
+ (for example: "uniletim-update-0.92b.exe"), which you can find here:</p>
+
+ <blockquote>
+  <p>
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=66618">sourceforge.net/project/showfiles.php?group_id=66618</a></p>
+ </blockquote>
+
+ <p>Choose the language of the installation dialogs and click the "Install" button. After the
+ updating process click the "Close" button.</p>
+
+ <h1 id="s30">IV. Usage</h1>
+
+ <h2 id="s31">1. Group creating</h2>
+
+ <p>After the first starting of the program (after installation) the form for the new group
+ creating will be displayed. It is necessary to insert all required data (name of the group, kind
+ of group, group administrator user name, password, password confirmation).</p>
+
+ <p>If you want to create another group, start the"C:\Program Files\uniletim\install.bat" file.</p>
+
+ <div class="ppnadpis">
+  Name of the group
+ </div>
+
+ <p>uniLETIM program enables to administrate more exchange groups independently. Every new group
+ needs different name.</p>
+
+ <div id="s311" class="ppnadpis">
+  Group types:
+ </div>
+
+ <dl>
+  <dt style="font-style: italic">Time Bank</dt>
+
+  <dd>When you create a TimeBank group, you will not have a possibility to set a price in the
+  announces. The price will be set just in the paying order and will be determinated in hours. This
+  kind of group is determinated to use on a local computer. All functions connected to uniLETIM
+  usage in the TimeBank mode are enable just for one user - an administrator.</dd>
+
+  <dt>LETS</dt>
+
+  <dd>
+   The members of the LETS groups can determinate the price of their offered goods and services in
+   the LETS currency. In the filling of the paying order the inserted price will be also
+   determinated in the LETS currency.<br />
+
+   <ul>
+    <li><i>single-user mode</i><br />
+    is suitable for the applications, where one person - the administrator of the group - will
+    execute all operations.</li>
+
+    <li><i>multi-user mode</i><br />
+    is sutiable for the applications, where more persons with their own identity will access to the
+    data. In this mode every member of the lets-group can access to his data, administrate his
+    announces and personal data, submit his paying orders, read the announces, the list of members
+    and the realized payments. The administrators can also create new sections, subsections and
+    accounts for new members.</li>
+   </ul>
+  </dd>
+ </dl>
+
+ <div class="ppnadpis">
+  Group administrator / User name / Password / Password confirmation:
+ </div>
+
+ <p>Every group has at least one administrator (look at group types <a href="#s311"
+ title="move to the Group modes">higher</a>). Insert your user (login) name and a password. Confirm
+ the password. You will need your user name and password for the work with uniLETIM.</p>
+
+ <p>(<a href="#s33" title="move to the Logging in">logging in</a>)</p>
+
+ <h2 id="s32">2. Running</h2><br />
+ <img src="../img/uniletim.gif" alt="ikona uniLETIM" /><br />
+ <b>uniLETIM</b><br />
+ <br />
+
+ <p>The uniLETIM program will be started by clicking on the "uniLETIM icon on your desktop or by
+ start-menu:<br />
+ "Start/Program Files/uniLETIM/uniLETIM vX.XX" (where X.XX is a number of the current version).</p>
+
+ <p>You can also start the program via file manager (for example Explorer) by starting the<br />
+ "C:\Program Files\uniletim\uniletim.bat" file.</p>
+
+ <p>If you want to connect to the program from another computer in your local network, you have to
+ insert "http://xxx.xxx.x.x/uniletim/" address to the internet browser, where xxx.xxx.x.x (for
+ example 192.168.1.1) is an IP address of the computer (usually the server), where the uniLETIM
+ program is installed.<br />
+ You can find out it in "Control panels - Net - TCP/IP protocol - Properties" on that computer.</p>
+
+ <h2 id="s33">3. Logging in</h2>
+
+ <p>Submit your name and password. If it is more groups administrated on your computer, after the
+ submitting of the name and the password the member's group will be displayed.</p>
+
+ <h2 id="s34">4. Administration</h2>
+
+ <h5 id="s341">Sections</h5>
+
+ <p>Section (for example Services) is a group of subsections (for example Cleaning up, Care). New
+ announces are insertable only into existing subsections and every subsection must be contained by
+ some section.</p>
+
+ <div class="ppnadpis" id="s3411">
+  Creating of a new section:
+ </div>
+
+ <ol>
+  <li>Choose the item "Sections" from the ADMINISTRATION menu.</li>
+
+  <li>Write the name of the section in the form called "New section".</li>
+
+  <li>Press ENTER or click to the "Create" button.<br />
+  The message about successfull creating of the section will be displayed and the new section will
+  be showed in the list of sections.</li>
+ </ol>
+
+ <div class="ppnadpis" id="s3412">
+  Renaming of an existing section:
+ </div>
+
+ <ol>
+  <li>Choose the item "Sections" from the ADMINISTRATION menu.</li>
+
+  <li>Go to "Change section", find a section which you would like to rename and click to it's
+  name.</li>
+
+  <li>Change the name of the section.</li>
+
+  <li>Press ENTER or click to the "Change" button.<br />
+  The message about successfull renaming of the section will be displayed and the new name of the
+  section will be showed in the list of sections.</li>
+ </ol>
+
+ <div class="ppnadpis" id="s3413">
+  Deleting of a section:
+ </div>
+
+ <p>Only a section, which does not contain any subsections nor announces, can be deleted. If you
+ want to delete the section or subsection, which contains announces, you have to move it to another
+ section (subsection) or delete it.</p>
+
+ <ol>
+  <li>Choose the item "Sections" from the ADMINISTRATION menu.</li>
+
+  <li>In the list of sections in the "Change sections" part find the section which contains a
+  subsection which you want to delete and click to "Delete" button.</li>
+
+  <li>Confirm the deleting of the subsection in the system window.<br />
+  The message about successfull deleting of the subsection will be displayed and the deleted
+  subsection will disappear from the list of subsections.</li>
+ </ol>
+
+ <p>Note: You can also administrate the sections and subsections by clicking to "Change" in the
+ header of list of announces.</p>
+
+ <h5 id="s342">Subsections</h5>
+
+ <p>Subsections enables a collecting of more announces with similar topic. Every subsection must be
+ situated in some section. It is easier and faster to orientate in the announces sorted to the
+ subsections.</p>
+
+ <div id="s3421" class="ppnadpis">
+  Creating of a new subsection:
+ </div>
+
+ <ol>
+  <li>Choose the item "Sections" from the ADMINISTRATION menu.</li>
+
+  <li>In the "Change sections" part find the section, in which you want to create a new subsection
+  and click to "Subsections" button.</li>
+
+  <li>Insert the name of the new subsection into the form in the "New subsection" part.</li>
+
+  <li>Press ENTER or click to "Create" button.</li>
+
+  <li>The message about successfull creating of the subsection will be displayed in the list of
+  subsections.</li>
+ </ol>
+
+ <p>Note: You can create a subsection without name and then you can use it to place the announces,
+ which are not placed to any subsection.</p>
+
+ <div id="s3422" class="ppnadpis">
+  Renaming of an existing subsection:
+ </div>
+
+ <ol>
+  <li>Choose the item "Sections" from the ADMINISTRATION menu.</li>
+
+  <li>In the list of sections in the "Change sections" part find a section, in which you want to
+  rename a subsection and click to "Subsections" button.</li>
+
+  <li>Find the subsection, which you want to rename, in the "Change subsections" part, and click to
+  it's name.</li>
+
+  <li>Change the name of the subsection.</li>
+
+  <li>Click to "Change" button.</li>
+
+  <li>The message about successfull renaming will be displayed.</li>
+ </ol>
+
+ <div id="s3423" class="ppnadpis">
+  Deleting of the subsection:
+ </div>
+
+ <p>Just the subsection, which does not contain any announces, can be deleted. If you want to
+ delete a subsection, which contains announces, you must move them to another subsections or delete
+ them first.</p>
+
+ <ol>
+  <li>Choose the item "Sections" from the ADMINISTRATION menu.</li>
+
+  <li>In the list of sections in the "Change sections" part find a section includes the subsection
+  which you want to delete and click the "Delete" button.</li>
+
+  <li>The system window will be displayed, click the "Yes" button to confirm deleting of
+  subsection.</li>
+
+  <li>The message about successfull deleting of the subsection will be displayed and deleted
+  subsection will disapear from the subsection list.</li>
+ </ol>
+
+ <h2 id="s35">5. Users</h2>
+
+ <p>Users of the uniLETIM programm we can divide into two groups: administrator and members. Each
+ group must have one administator and it can have optional number of members. Administrator is also
+ a member. The administrator administrates announcements, sections and subsections, member list and
+ payments. Administrator can provide to members: current reports of payments and list of
+ members and announcements. In the LETS - multi-user mode can users administrate their own
+ annoucements, data and payments and also print the <a href="#s38"
+ title="posun na kapitolu VÃ½pisy">reports</a>.</p>
+
+ <h5 id="s351">New user</h5>
+
+ <p>User is a person who is registrated by administrator as the member of the group. User can
+ publish and change his announcements and realize his payments.</p>
+
+ <div class="ppnadpis">
+  Adding of a new member:
+ </div>
+
+ <ol>
+  <li>Choose the item "New user" from the MEMBERS menu.</li>
+
+  <li>Fill the data about the new member. Only obligatory data is "User name". Next data are
+  optional (in the LETS - multi-user mode is needed to insert also user pasword).</li>
+
+  <li>Click the button "Create"</li>
+
+  <li>The message about succesful creating of the new user will be displayed. There will be also
+  displayed the user card.</li>
+ </ol>
+
+ <p>The new user can be added by clicking on "New user" button in member list. Choose item
+ MEMBERS/Members -&gt; New user.</p>
+
+ <p>Administrator can add, change and delete the announcements, edit the personal data, add and
+ view user's payments. (In the LETS - multi-user mode administrator can change status of the
+ member (User - Group Administrator - Main Administrator)).</p>
+
+ <h5 id="s352">User list</h5>
+
+ <p>The list of all users of the group will be displayed by clicking the "Members" button in
+ MEMBERS menu.</p>
+
+ <div class="ppnadpis">
+  User list:
+ </div>
+
+ <p>Members list can be sorted by the User name, First name, Last name or by Account state by
+ clicking on the relevant title in the header of the member list.<br />
+ Click the "New user" button to add new member.<br />
+ If click the "Print" button there will be displayed the report from the member list in the new
+ window which includes telephone and email contacts and current account states in printable
+ format.</p>
+
+ <h5 id="s353">Information about the user</h5>
+
+ <p>Click the User name of member in the member list.<br />
+ The card of the member will be displayed. On this card there can be changed userÂ´s personal
+ data, administrated the payments and annoncementsna or can be changed the administrator
+ password (on the administrator card).</p>
+
+ <p>Note: To view information about user click the User name anywhere in the application (except of
+ printing reports).</p>
+
+ <h5 id="s354">Changing the user data</h5>
+
+ <p>Display the user card (according to previous steps). Click the "Change data" button on the user
+ card to change all user personal data which system includes. Click the "Change password" button on
+ the administrator card to set and confirm the new password of group administrator.</p>
+
+ <h5 id="s355">Deleting the user</h5>
+
+ <ol>
+  <li>Click the "MEMBERS" button in the page header.</li>
+
+  <li>Click the "Delete" button in the line where is the user who will be deleted.</li>
+
+  <li>Confirm deleting of the user.</li>
+ </ol>
+
+ <h2 id="s36">6. Announcements</h2>
+
+ <p>Announcement includes the information about demand or supply of user who published the
+ announcement. Programm provides possibility to administrator to add, edit, view and delete
+ announcements of all group members.</p>
+
+ <h5 id="s361">Viewing announcements</h5>
+
+ <p>To display all announcements (in all sections and subsections) click on empty line under the
+ section list in "ANNOUNCEMENTS" menu or click the "ANNOUNCEMENTS" button in the page header.</p>
+
+ <div class="ppnadpis">
+  Viewing announcements of one section:
+ </div>
+
+ <p>Choose the title of section you want to view in "ANNOUNCEMENTS" menu.<br />
+ All subsection annoncements of this section will be displayed in the order as were inserted.<br />
+ To view announcements in groups sorted by subsection click the "All" button in the fourth line of
+ the page.</p>
+
+ <div class="ppnadpis">
+  Viewing announcements of one subsection:
+ </div>
+
+ <p>Click the subsection title you want to view which is placed under the section title. The list
+ of subsection which belong to chosen section will be displayed.</p>
+
+ <div class="ppnadpis">
+  Viewing the announcements of one user
+ </div>
+
+ <p>Click the "Announcement" button on the user card. The announcements of chosen user will be
+ displayed.</p>
+
+ <div id="s362" class="ppnadpis">
+  Searching in announcements:
+ </div>
+
+ <p>Programm uniLETIM provides possibility to search announcement according to key word.<br />
+ Display the page with the announcement list. Insert the key word in the last line of the page,
+ choose the section in which you want to search and choose the time allocation.<br />
+ Click th "Search" button.</p>
+
+ <p>The annoncements which include the key word will be displayed.<br />
+ It doesn't make any difference to use capitals in key word and the key word can be also only the
+ part of the word.</p>
+
+ <p>You can also search all announcemets in certain time allocation.</p>
+
+ <h5 id="s363">Adding the announcement</h5>
+
+ <ol>
+  <li><u>The way 1:</u></li>
+
+  <li>Choose the item "New announcement" from the "ANNOUNCEMENTS" menu.</li>
+
+  <li>Insert the text of the annoncement, choose the user who publishing the annoncement, choose
+  the subsection, choose the time allocation (time perion in which will the announcement valid - if
+  you select e.g. "week" after this time the annoncement automatically disapear. Choose the item
+  "demand" or "supply" in the next field and click the "Insert" button.</li>
+ </ol>
+
+ <ol>
+  <li><u>The way 2:</u></li>
+
+  <li>Display the announcemets of the section in which you want to add a new announcement. (from
+  the "ANNOUNCEMENTS" menu e.g.: ANNOUNCEMENT/Services).</li>
+
+  <li>Click the "Insert" button in the last line of the field Demand or field Supply.</li>
+
+  <li>Insert the data valid for the new announcement in the same way like in the point 1.</li>
+
+  <li>The message about the succesfull inserting of the new announcement and also the form for the
+  inserting of next announcement to the same section will be displayed. If you want to insert
+  annoncement to the other section click the "New announcement" button in the "ANNOUNCEMENTS"
+  menu.</li>
+ </ol>
+
+ <h5 id="s364">Changing the annoncement</h5>
+
+ <ol>
+  <li>Display <a href="#s353" title="move to the chapter about viewing the user card">the card of
+  the user</a> , who published the announcement you want to change.</li>
+
+  <li>Click the blue title "Annoncements" on the bottom of the page.</li>
+
+  <li>Find the announcement you want to change and click the "Change" button.</li>
+
+  <li>Change the announcement text, choose the subsection or the character of the announcement
+  (demand/supply).</li>
+
+  <li>Click the "Change" button.</li>
+ </ol>
+
+ <h5 id="s365">Deleting the announcement</h5>
+
+ <ol>
+  <li>Display <a href="#s353" title="move to the chapter about viewing the user card">the card of
+  the user</a> who published the announcemet you want to delete.</li>
+
+  <li>Click the blue title "Annoncements" on the bottom of the page.</li>
+
+  <li>Find the announcement you want to delete and click the "Delete" button.</li>
+
+  <li>Confirm the deleting.</li>
+ </ol>
+
+ <h2 id="s37">7. Payments</h2>
+
+ <h5 id="s371">Viewing the payments</h5>
+
+ <p>Payments are realized in the determinated currency valid for the current group. Each
+ payment transfers certain number of units from the account of the user who receives some
+ service or product (payer) to the account of the user who provides this service or product
+ (recipient).</p>
+
+ <p>You can show the viewing of the payments by clicking to "Payments" in the menu. The payments will be shown for ten items per page sorted by the time of the transaction realization. You can show the older transactions by clicking the page number on the bottom of the screen. When you click the member's name, you will see his personal informations. You can click the "Transaction" to realize the paying order.</p>
+
+ <h5 id="s372">Paying orders</h5>
+
+ <p>The paying order is a form, where you can set the provider, the recipient, the number of units and the service, for which the payment is realized. After the filling of the form the inserted number of units will be moved from the recipient account to the provider account.</p>
+
+<p>I am sorry, this manual is not finished.</p>
+
+</body>
+</html>

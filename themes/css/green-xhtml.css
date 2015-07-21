@@ -1,0 +1,200 @@
+
+.cesta { }  
+a { color: blue; text-decoration: none;}  
+a:hover { text-decoration: none; color: red;  }  
+body  {   
+	margin: 0;
+	color: black;
+	font: 9pt/12pt Helvetica, sans-serif;
+	background-color: white;}  
+	
+
+H1 {  
+	font-size: 18px;  
+ 	text-decoration: none;  
+	font-weight: bold;  
+	color: yellow;   
+	background-color: green;  
+	margin-top: 22pt;   
+	margin-bottom: 6px;  
+	text-align: center   
+}  
+H2 {  
+	font-size: 14px;   
+	text-decoration: none;   
+	font-weight: bold;   
+	color: green;   
+	margin-top: 20pt;   
+	margin-bottom: 3px;  
+	padding-left: 12px; 
+	text-align: left; 
+	background-color: yellow;  
+}  
+h3  {  
+	color: green;  
+	font-variant: small-caps;  
+	font-weight: bold;  
+	font-size: 14 pt;  
+	background-color: yellow;  
+	margin-top: 18px;  
+	margin-bottom: 12px;  
+	padding-top: 3px; 
+	padding-bottom: 3px; 
+	text-align: center; 
+}  
+h4  {  
+	color: black;  
+	font-weight: bold;  
+	font-size: 10pt;  
+	margin-top: 6px;  
+	margin-bottom: 12px;  
+	text-align: center;  
+}  
+
+
+TD.header {
+	height: 130px;
+	background-color: #6C0;
+	border: 1px solid #6C0;
+	color: white;
+	padding-left: 190px;
+	white-space: nowrap;
+	margin-bottom: 10px;
+	background-image: url(../../img/lemon.gif);
+	background-repeat: no-repeat;
+}
+
+
+TD.header H1 {
+	font-size: 24pt;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	background-color: #6C0;
+	color: white;
+	text-align: left;
+}
+
+TD.header H2 {
+	font-size: 12pt;
+	font-weight: bold;
+	border-top: 1px solid white;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-left: 0px;
+	display: inline;
+	background-color: #6C0;
+	color: white;
+	text-align: left;
+}
+
+.header HR {
+
+	padding-left: 190px;
+} 
+ul {margin-top:6pt; margin-bottom: 10pt;}  
+p {margin-top:12pt; margin-bottom: 0pt;}  
+blockquote {margin-top:3pt; margin-bottom: 0pt;}  
+  
+tr {  
+    font-size: 9pt;   
+}  
+.hlavicka { font-size: 10pt;}  
+.paticka {    
+    font-size: 8pt;  
+ 	font-style : italic;}  
+#debet {    
+    color : red;}  
+  
+.td_tmave {  
+    color: yellow;  
+	font-weight: bold;  
+	font-size: 10pt;  
+	background-color: green;  
+}  
+  
+.dark {  
+    color: yellow;  
+	font-weight: bold;  
+	font-size: 10pt;  
+	background-color: green;  
+	height: 16px;  
+}  
+  
+th {  
+    color: yellow;  
+	font-weight: bold;  
+	font-size: 10pt;  
+	background-color:green;  
+	height : 16px;  
+}  
+.td_st {  
+    background-color: 66CC99;  
+}  
+.td_rd {  
+    background-color: CCFFCC;  
+}  
+.head {  
+    background-color: green;  
+  
+}  
+.headloc {  
+    background-color: green;  
+	margin-bottom: 0px;  
+}  
+a.headitem {  
+	font-variant: small-caps;  
+	font-weight: bold;  
+	font-size: 12px;  
+	color: yellow;  
+	text-align: center;  
+}  
+  
+.col {  
+   background-color: CCFFCC;  
+}  
+.padding {  
+	padding-bottom: 10px;  
+	padding-top: 10px;  
+	padding-left: 10px;  
+	padding-right: 10px;     
+}  
+a.tm {  
+    color: white;  
+    text-decoration: none;  
+}  
+  
+.res {    
+    font-size: 10pt;  
+	color: navy;  
+ 	font-style : bold;  
+	text-align: center;}  
+.error {    
+    font-size: 10pt;  
+	color: red;  
+ 	font-style : bold;  
+	text-align: center;}  
+.pr {    
+    margin-left: 10px;}  
+.yell {    
+    color: yellow;}  
+.border {    
+	border-color: green; 
+	border-width : thin; 
+	border-style: solid; 
+	}  
+	  
+.book {    
+    margin-left: 60px;  
+	margin-right: 60px;  
+    margin-top: 40px;  
+	}  
+div.ppnadpis { 
+	margin-top:12pt; 
+	margin-bottom: 0pt; 
+	font-style: italic; 
+	text-decoration: underline; 
+} 
+h5 { 
+	font-size: 13px; 
+} 

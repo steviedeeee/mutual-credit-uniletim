@@ -1,0 +1,271 @@
+
+@import url("./menu.css");
+
+BODY {
+	background-color: white;
+	padding: 0px; margin: 0px;
+	margin-top: 0px;
+	text-align: center; }
+
+div, td, tr, p {
+	font-size: small;
+	font-family: Verdana, Verdana CE, Arial CE, Helvetica, sans-serif; }
+
+table {
+	padding: 0px; margin: 0px;}
+
+A {
+	text-decoration: none;
+	color: blue;}
+
+A:hover {
+	text-decoration: none;
+	color: red;}
+
+A:active {
+	text-decoration: none;
+	color: red;}
+
+DIV#main {
+	position: relative;
+  	width: 740px;
+	border: green 2px solid;
+	margin: 20px auto; padding: 0px;
+ 	text-align: justify;
+	text-align: left; }
+
+DIV#header {
+	background: #6C0;
+	height: 55px;
+	padding: 8px; margin: 0px;
+	color: white;}
+
+DIV#header H1 {
+	display: inline;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 200%;}
+
+DIV#header p#about {
+	/*display: inline;
+	top: 0px;*/
+	margin: 0px;
+	margin-left: 0px;
+	font-weight: bold;}
+
+DIV#header div#right {
+	position: absolute;
+	right: 5px;
+	margin: 0;
+	padding: 0;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: right;}
+
+DIV#header form {
+	display: inline;
+	margin: 0;}
+
+DIV#header select {
+	width: 130px;
+	font-size: 90%;
+	background-color: #5C9435;
+	color: yellow;
+	border: 1px solid yellow;}
+
+DIV#header a {
+	display: block;
+	padding: 3px;
+	font-weight: bold;
+	color: green;
+	font-size: 90%;}
+
+DIV#header a:hover {
+	color: yellow;}
+
+DIV#subheader {
+	position: relative;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	color: yellow;
+	vertical-align: bottom;
+	text-align: right;
+	background: #6C0;}
+
+DIV#center {
+	padding: 0px; margin: 0px 0px 20px 0px;}
+
+DIV.location {
+	padding: 3px 8px; margin: 15px 15px 0px 15px;
+	background: #6C0;}
+
+DIV.location H3  {
+	display: inline;
+	/*font-variant: small-caps;
+	text-transform: capitalize;
+  */
+	font-weight: bold;
+	font-size: 110%;
+	margin 0px; padding: 0px;}
+
+DIV.location H3 A  {
+	font-size: 100%;}
+
+DIV.location UL {
+	display: inline;
+	margin: 0px; padding: 0px;}
+
+DIV.location LI {
+	display: inline;
+	margin: 0px; padding: 0px;}
+
+DIV.location LI:after {
+	content: " I";}
+
+DIV.location HR {
+	display: none;}
+
+DIV.location A {
+	color: navy;
+	margin: 0px;
+ 	font-size: 90%;}
+
+DIV.location A:hover {
+	color: red; }
+
+DIV.result {
+	color: green;
+ 	font-style: bold;
+	margin: 5px 15px 5px 15px;}
+
+DIV.error {
+	color: red;
+ 	font-style: bold;
+	margin: 5px 15px 5px 15px;}
+
+DIV.search {
+	color: navy;
+ 	font-style: bold;
+	background-color: yellow;
+	padding: 3px;
+	margin: 5px 15px 15px 15px;}
+
+DIV.content-subsections {
+	padding: 5px;
+	font-size: 90%;
+	text-align: center;
+	margin: 15px 15px 15px 15px;
+  border: 1px solid green;
+	background: #CFC;
+  }
+
+DIV.content-border {
+	width: 710px;
+	_width: 705px;
+	margin: 15px 15px 5px 15px;
+	padding: 0px;
+	border: green 1px solid;
+	vertical-align: top;}
+
+DIV.content-noborder {
+	width: 710px;
+	_width: 705px;
+	margin: 10px 15px 5px 15px;
+	padding: 0px;}
+
+TABLE.content {
+	width: 100%;
+	margin: 0px; padding: 0px;
+	empty-cells: show;
+	border: 0px; border-spacing: 0px;}
+
+TABLE.content td{
+	font-size: 100%;
+	margin: 0px; padding: 4px;}
+
+TABLE.content-form {
+	width: 100%;
+	margin: 0px; padding: 10px;
+	empty-cells: show;
+	border: 0px; border-spacing: 0px;}
+
+TABLE.content-form td{
+	font-size: 90%;
+	margin: 0px; padding: 5px;}
+
+TABLE td.form-i-name {
+	width: 150px;
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;}
+
+COL.col_1 {
+	width: 80px;}
+COL.col_2 {
+	width: 100px;}
+COL.col_4 {
+	width: 90px;}
+
+.uc1 {
+	width: 120px;}
+.uc2 {
+	width: 90px;}
+.uc3 {
+	width: 140px;}
+.uc4 {
+	}
+.uc5 {
+	width: 90px;}
+.uc6 {
+	width: 90px;}
+
+TR.th_main TH {
+    color: yellow;
+	font-weight: bold;
+	background-color: green;
+	padding: 3px 8px;}
+
+TR.th_main a {
+    color: white;
+	font-weight: bold;
+	font-size: 95%;}
+
+TR.th_main a:hover {
+    color: yellow;}
+
+TR.th_sub TH {
+    color: yellow;
+	background-color: #66CC99;
+	padding: 3px 8px;}
+
+TR.th_sub a {
+	font-weight: normal;
+	font-size: 95%;}
+
+TBODY.tb_dark TD {
+	background-color: #CCFFCC;}
+
+TR.tb_content TD {
+	padding: 8px 8px 0px 8px;}
+
+TR.tb_info TD {
+    font-size: 80%;
+ 	font-style : italic;
+	color: gray;
+	padding: 3px 8px 8px 8px;}
+
+TR.tb_info a {
+    color: navy;}
+
+TR.tb_info a:hover {
+    color: red;}
+
+
+DIV.unauth {
+	margin: 30px;
+	padding: 30px;
+	text-align: center;
+	border: 1px solid green;
+	vertical-align: top;}
+

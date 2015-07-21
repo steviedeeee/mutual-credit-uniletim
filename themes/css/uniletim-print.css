@@ -1,0 +1,41 @@
+body {
+
+	font-family: tahoma, Helvetica CE, Arial CE, Helvetica, Arial  }
+tr { 
+    font-size: 9pt; 
+}
+a { color: blue; text-decoration: none;}
+a:hover { text-decoration: underline; color: red;  }
+
+.dark {
+	font-weight: bold;
+	font-size: 10pt;
+	font-variant: small-caps;
+	border: 1px solid;
+	border-top:4px double;
+	border-bottom: 1px solid ;
+}
+.middle {
+	font-size: 120%;
+	font-weight: bold;
+	font-variant: small-caps;
+	border: 1px solid;
+	border-top: 2px solid;
+}
+.row {
+	border-bottom: 1px solid;
+}
+
+.center {
+	border-left: 4px silver solid;
+}
+h2  {
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: large;
+	text-align: center;
+}
+.help  {
+	color: red;
+	font-size: 8pt;
+}

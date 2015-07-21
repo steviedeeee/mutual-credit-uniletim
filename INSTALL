@@ -1,0 +1,7 @@
+UniLETIM installation
+
+1. Put the content of this folder to the www-root of your web-server.
+2. Edit the 'config.php' - set up the database name, user and password.
+3. Browse your browser to the uniLETIM URL (for example http://localhost/uniletim/)
+
+For more information read the documentation.

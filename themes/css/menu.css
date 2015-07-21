@@ -1,0 +1,49 @@
+/* author: ovegh@vsieti.sk */
+/* UNI-portal style*/
+
+
+
+
+DIV#subheader {
+	margin-bottom: 0px;}
+DIV#subheader p {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	height: 1.7em;}
+
+DIV#subheader p a, DIV#subheader p span {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0.2em 0.5em; }
+
+DIV#subheader p span {
+	font-weight: bold; }
+
+
+p.brother {
+}
+DIV#subheader p.brother a, DIV#subheader p.brother span {
+	color: black;
+	border: 1px solid green;
+	border-bottom: none;
+  margin-right: 2px;
+  -moz-border-radius-topright: 9px;
+  -moz-border-radius-topleft: 9px;  }
+p.brother a {
+  background: #6AD202;}  
+p.brother a:hover {
+	background-color:  #7EFB01;}
+p.brother span {
+	background: #73E600;}
+
+p.child {
+	color: #004433;
+	background: #73E600;}
+	
+p.child a {
+	color: black;
+	}
+p.child a:hover {
+	background-color: #7EFB01;}

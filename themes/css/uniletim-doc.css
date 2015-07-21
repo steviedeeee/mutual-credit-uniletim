@@ -1,0 +1,87 @@
+body  {
+	color: black;
+	background-color: white;
+	font-size: small;
+	font-family: "Helvetica CE", "Arial CE", Helvetica, Tahoma, Arial, sans-serif;
+	margin: 30px;
+}
+
+a { color: #060; text-decoration: none;}
+
+a:hover { text-decoration: underline; color: red;  }
+
+div.content h1,
+div.toc h1 {
+	font-size: 160%;
+	font-family: serif;
+	color: yellow;
+	background-color: green;
+	padding: 4px;
+	padding-left: 10px;
+	text-align: left;
+	margin-top: 32px;
+}
+
+div.content h2 {
+	font-size: 140%;
+	color: green;
+	padding: 3px;
+	padding-left: 10px;
+	text-align: left;
+	background-color: #ff3;
+	margin-top: 24px;
+}
+
+div.content h3  {
+	color: green;
+	font-weight: bold;
+	font-size: 120%;
+	margin-top: 16px;
+}
+
+div.content h4  {
+	color: black;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+div.note {
+	color: #333;
+	background-color: #EEE;
+	border: 1px solid #CCC;
+	margin: 18px;
+	padding: 4px;
+	font-size: smaller;
+}
+
+dt {
+	font-weight: bold;
+}
+
+div.toc ol {
+	list-style-type: upper-roman;
+}
+div.toc ol ol {
+	list-style-type: decimal;
+}
+div.toc ol ol ol {
+	list-style-type: lower-latin;
+}
+div.toc ol ol ol ol {
+	list-style-type: lower-roman;
+}
+div.caption {
+	text-align: center;
+	border: 1px dotted grey;
+	background-color: #eee;
+}
+
+div.caption h1 {
+	font: italic normal normal 240% serif;
+	color: green;
+}
+
+div.caption h2 {
+	font: italic normal normal 220% serif;
+	color: grey;
+}
